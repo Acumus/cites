@@ -1,0 +1,192 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.1em;
+    color: #555;
+}
+/*
+input {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    font-size: 1.2em;
+    background-color: #4c5caf;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #458fa0;
+}
+*/
+
+form input, form select, form button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+form input, form select {
+    width: 200px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+/*
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    background: #d4edda;
+    text-decoration: line-through;
+    color: #155724;
+}
+
+li button {
+    background: #ff5252;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+li button.complete-btn {
+    background: #007bff;
+}
+
+li button.complete-btn:hover {
+    background: #0056b3;
+}
+
+li button:hover {
+    background: #e04848;
+}
+*/
+#appointmentList {
+    margin-top: 20px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.llistat {
+display:block;
+justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+
+}
+
+.llistat.completed {
+    background-color: #d3d3d3; /* Fondo gris claro para las citas completadas */
+}
+
+.llistat .btnCompletat{
+    padding-top: 0.5em;
+
+}
+.llistat .btnCompletat button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.llistat.completed .complete-btn {
+    background-color: #333; /* Gris oscuro para el botón de "completar" de citas completadas */
+    color: white;
+}
+
+.llistat:not(.completed) .complete-btn {
+    background-color: #4CAF50; /* Azul para el botón de "completar" de citas pendientes */
+    color: white;
+}
+
+.llistat .delete-btn {
+    background-color: #f44336; /* Rojo para el botón de "eliminar" */
+    color: white;
+}
+
+.llistat .btnCompletat button:hover {
+    background-color: #555; /* Efecto hover para los botones */
+}
+
+.llistat.completed .btnCompletat button:hover {
+    background-color: #444; /* Efecto hover para los botones de citas completadas */
+}
+
+input[type="date"], input[type="time"] {
+    padding: 8px;
+    font-size: 1rem;
+    width: 150px;
+}
+
+select {
+    padding: 8px;
+    font-size: 1rem;
+    width: 160px;
+}
